@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nitian's Mom Beauty Hub</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #2c2c2c;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: "Playfair Display", serif;
+            color: var(--secondary-color);
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--secondary-color);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .logo img {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* HERO */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .btn {
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* ABOUT */
+        .about {
+            background-color: #ffeef0;
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 4rem 10%;
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+        }
+
+        /* CONTACT FORM */
+        .form-box {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+        }
+        .form-box input, .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            padding: 15px 20px;
+            color: white;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/0Z8FQZC.png" alt="Logo" />
+            Nitian's Mom
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Beauty Redefined</h1>
+        <p>Welcome to Nitian's Mom Beauty Hub & Parlour. Where perfection meets style.</p>
+        <a href="#contact" class="btn">Book Appointment</a>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Premium Services</h2>
+        <div class="service-grid">
+            <div class="service-card"><h3>Hair Styling</h3><p>Haircuts, Spa & Coloring</p><span class="price">₹299</span></div>
+            <div class="service-card"><h3>Skin Care</h3><p>Healthy glowing facial treatments</p><span class="price">₹599</span></div>
+            <div class="service-card"><h3>Bridal Makeup</h3><p>For your special day</p><span class="price">₹5000</span></div>
+            <div class="service-card"><h3>Manicure & Pedicure</h3><p>Relaxing hand & feet care</p><span class="price">₹399</span></div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <h2>Our Work Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://i.imgur.com/H2T4H0N.jpeg" />
+            <img src="https://i.imgur.com/1D4Qfs9.jpeg" />
+            <img src="https://i.imgur.com/0m7iHfA.jpeg" />
+            <img src="https://i.imgur.com/Q18GQnX.jpeg" />
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>Why Choose Us?</h2>
+        <p>Founded with love, Nitian's Mom Beauty Hub brings a homely yet professional beauty experience.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Address: Your Address Here</p>
+        <p>📞 Phone: +91 9876543210</p>
+        <p>📧 Email: contact@nitiansmom.com</p>
+
+        <div class="form-box">
+            <h3>Send a Message</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="number" placeholder="Phone Number" required />
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a class="whatsapp-btn" href="https://wa.me/91876543210">Chat on WhatsApp</a>
+
+    <footer>
+        <p>&copy; 2024 Nitian's Mom Beauty Hub & Parlour. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
